@@ -4,6 +4,8 @@ import useReactRouter from 'use-react-router'
 
 import Dashboard from '../modules/home/dashboard/Dashboard'
 
+import NavBar from '../components/nav-bar/NavBar'
+
 const rootRoutes = [
   {
     path: '',
@@ -34,5 +36,10 @@ export default function Root() {
     }
   }, [pathname, search])
 
-  return <>{switchRoutes}</>
+  return (
+    <>
+      <NavBar />
+      {switchRoutes}
+    </>
+  )
 }
