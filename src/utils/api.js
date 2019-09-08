@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'http://data.fixer.io/api/'
+const API_URL = process.env.REACT_APP_API_URL
 
 const get = async (serviceUrl, params) => {
   const url = `${API_URL}${serviceUrl}`

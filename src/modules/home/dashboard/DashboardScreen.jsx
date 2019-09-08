@@ -9,6 +9,7 @@ import Button from '../../../components/button/Button'
 
 const DECIMALS = 4
 const MINUTES = 10
+const ACCESS_KEY = process.env.REACT_APP_API_ACCESS_KEY
 
 const initialValues = { usd: '0', eur: '0' }
 
@@ -25,9 +26,7 @@ const DashboardScreen = () => {
     setLoading(true)
 
     try {
-      const { data } = await get(
-        'latest?symbols=USD&access_key=1ad06fbb51849a17967a14f1adc774cc'
-      )
+      const { data } = await get(`latest?symbols=USD&access_key=${ACCESS_KEY}`)
       const usd = !data.rates.USD ? null : data.rates.USD
 
       setRate(usd)
