@@ -5,6 +5,7 @@ import useReactRouter from 'use-react-router'
 import Dashboard from '../modules/home/dashboard/Dashboard'
 
 import NavBar from '../components/nav-bar/NavBar'
+import Footer from '../components/footer/Footer'
 
 const rootRoutes = [
   {
@@ -40,6 +41,7 @@ export default function Root() {
     <>
       <NavBar />
       {switchRoutes}
+      <Footer />
     </>
   )
 }
