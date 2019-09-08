@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Formik, Field } from 'formik'
 import { object, string } from 'yup'
 import { formatCurrency, normalizeCurrency } from '../../../utils/pipes'
-// import api from '../../../utils/api'
+import { get } from '../../../utils/api'
 import useInterval from '../../../hooks/useInterval'
 import TextInput from '../../../components/text-input/TextInput'
 import Button from '../../../components/button/Button'
@@ -19,26 +19,23 @@ const validationSchema = object().shape({
 
 const DashboardScreen = () => {
   const [loading, setLoading] = useState(false)
-  const [rate, setRate] = useState(0)
+  const [rate, setRate] = useState(null)
 
   const fetchCurrency = async () => {
-    // try {
-    //   const response = await api.get(
-    //     'latest?symbols=USD&access_key=1ad06fbb51849a17967a14f1adc774cc'
-    //   )
-    //   console.log(response)
-    //   setRate(response.rates.usd)
-    // } catch (error) {
-    //   console.log(error)
-    // } finally {
-    //   setLoading(false)
-    // }
     setLoading(true)
 
-    await setTimeout(() => {
-      setRate(1.113251)
+    try {
+      const { data } = await get(
+        'latest?symbols=USD&access_key=1ad06fbb51849a17967a14f1adc774cc'
+      )
+      const usd = !data.rates.USD ? null : data.rates.USD
+
+      setRate(usd)
+    } catch (error) {
+      console.log(error)
+    } finally {
       setLoading(false)
-    }, 5000)
+    }
   }
 
   const onSubmit = ({ usd }, { setFieldValue, setSubmitting }) => {
@@ -94,7 +91,7 @@ const DashboardScreen = () => {
 
             <Button
               className="mt-8"
-              disabled={!isValid || isSubmitting || loading}
+              disabled={!rate || !isValid || isSubmitting || loading}
               loading={isSubmitting || loading}
             >
               CALCULATE
