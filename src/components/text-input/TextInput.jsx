@@ -13,6 +13,7 @@ const Input = ({
   showErrors,
   normalize,
   format,
+  ...inputProps
 }) => {
   const handleChange = event => {
     const text = event.target.value
@@ -35,6 +36,7 @@ const Input = ({
         placeholder={placeholder}
         onChange={handleChange}
         onBlur={handleTouch}
+        {...inputProps}
       />
 
       {showErrors && touched[name] && !!errors[name] && (

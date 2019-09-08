@@ -6,7 +6,7 @@ const BASE =
 
 const CLASSES = {
   disabled: 'bg-gray-600 text-white cursor-not-allowed',
-  primary: 'bg-teal-500 hover:bg-teal-700 text-white',
+  primary: 'bg-teal-500 hover:bg-green-500 text-white',
 }
 
 const Button = ({ children, className, disabled, loading, onClick }) => {
