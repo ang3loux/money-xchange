@@ -1,68 +1,91 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
+<p align="center">
+  <a href="https://github.com/ang3loux/money-xchange">
+    <img src="public/logo192.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Available Scripts
+  <h3 align="center">React - Money XChange</h3>
+</p>
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contact](#contact)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
 
-### `npm test`
+## About The Project
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-### `npm run build`
+This project is a technical test required at Belatrix
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Built With
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- [React JS](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Router](https://reacttraining.com/react-router/)
+- [Formik](https://jaredpalmer.com/formik/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- GETTING STARTED -->
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Prerequisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- npm
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+npm install npm@latest -g
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Get a free API Key at [https://fixer.io/product](https://fixer.io/product)
+2. Clone the repo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+git clone https://github.com/ang3loux/money-xchange
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Install NPM packages
 
-### Code Splitting
+```sh
+npm install
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+4. Create your `.env` and then enter your API KEY
 
-### Analyzing the Bundle Size
+```JS
+REACT_APP_API_URL=http://data.fixer.io/api/
+REACT_APP_API_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxx
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+<!-- USAGE EXAMPLES -->
 
-### Making a Progressive Web App
+## Usage
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+1. Start the server and enjoy :rocket:
 
-### Advanced Configuration
+```sh
+npm run start
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+<!-- CONTACT -->
 
-### Deployment
+## Contact
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Angelo Zambrano - [LinkedIn](https://www.linkedin.com/in/angelozambrano1990/) - angelo.zambrano.1990@gmail.com
 
-### `npm run build` fails to minify
+Project Link: [https://github.com/ang3loux/money-xchange](https://github.com/ang3loux/money-xchange)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[product-screenshot]: src/assets/images/screenshot.png
