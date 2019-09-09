@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import useReactRouter from 'use-react-router'
 
-import Dashboard from '../modules/home/dashboard/Dashboard'
+import Dashboard from '../modules/home/dashboard/DashboardScreen'
 
 import NavBar from '../components/nav-bar/NavBar'
 import Footer from '../components/footer/Footer'

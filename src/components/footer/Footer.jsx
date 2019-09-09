@@ -37,7 +37,7 @@ const SECTIONS = [
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100">
+    <footer className="bg-gray-700">
       <div className="container mx-auto px-8 pt-10 pb-6">
         <div className="flex flex-wrap">
           {SECTIONS.map(({ name, options }) => (
@@ -45,7 +45,7 @@ const Footer = () => {
               key={name}
               className="w-full md:w-1/4 text-center md:text-left"
             >
-              <h5 className="uppercase mb-6 font-bold">{name}</h5>
+              <h5 className="uppercase mb-6 font-bold text-white">{name}</h5>
 
               <ul className="mb-4">
                 {options.map(({ optionName, route }) => (

@@ -8,7 +8,7 @@ import Home from './routes/home'
 const hist = createBrowserHistory()
 
 const App = () => (
-  <main className="h-screen w-screen">
+  <main className="h-screen w-screen flex flex-col">
     <Router history={hist}>
       <Switch>
         <Route path="/" component={Home} />
