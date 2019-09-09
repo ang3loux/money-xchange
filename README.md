@@ -25,7 +25,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This project is a technical test required in Belatrix
+This project is a technical test required at Belatrix
 
 ### Built With
 
